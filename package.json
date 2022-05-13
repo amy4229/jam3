@@ -1,0 +1,25 @@
+{
+  "name": "jam",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Zoom clone using WebRTC and Websockets jam",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11SS",
+    "@socket.io/admin-ui": "^0.2.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "install": "^0.13.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.4.1",
+    "ws": "^8.5.0"
+  }
+}

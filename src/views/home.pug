@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Jam
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="../public/css/style.css")
+
+    body 
+        header 
+            h1 Jam
+        main
+            div#welcome
+                span.error.hidden The room you selected is full. Choose another room please.
+                form
+                    input(placeholder="Room Name", required, type="text")
+                    button EnterRoom
+            div#call 
+                div#myStream.stream
+                    video#myFace(autoplay, playsinline)
+                    div.buttons
+                        button#mute Mute
+                        button#camera Turn OFF Camera
+                    select#cameras
+                div#peerStream.stream
+                    video#peerFace(autoplay, playsinline)
+
+        script(src="socket.io/socket.io.js")
+        script(src="public/js/app.js") 
